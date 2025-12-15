@@ -38,11 +38,11 @@ python new_train.py
 
 ### 前提条件
 
-- 模型路径: 确保 ./emotion_model 目录存在并包含训练好的模型文件
+- 模型路径: 确保 `./emotion_model` 目录存在并包含训练好的模型文件
 
 - 我们提供训练好的情感分析模型：[下载链接]()
 
-- 多模态大模型服务：需要运行一个兼容 OpenAI 接口的多模态大模型服务（例如 Qwen2.5-VL-7B-Instruct），并且配置正确的 base_url 和 port（默认 http://127.0.0.1:30000/v1 ）
+- 多模态大模型服务：需要运行一个兼容 OpenAI 接口的多模态大模型服务（例如 `Qwen2.5-VL-7B-Instruct`），并且配置正确的 `base_url` 和 `port`（默认 http://127.0.0.1:30000/v1 ）
 
 - 将待推理的数据文件路径替换`inference.py`中的`csv_file_path`和`image_dir_path`变量
 
@@ -52,6 +52,6 @@ python inference.py
 ```
 
 #### 输出
-- 帖子级别的详细预测结果：post_results.csv
-- 事件级别的汇总统计：event_summary.json
+- 帖子级别的详细预测结果：`post_results.csv`
+- 事件级别的汇总统计：`event_summary.json`
 
