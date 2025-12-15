@@ -29,7 +29,7 @@ python new_train.py
 ```
 
 #### 输出
-- 模型保存至 `./emotion_model`目录
+- 模型默认保存至 `./emotion_model`目录
 
 - 训练过程显示各epoch的loss和验证集性能
 
