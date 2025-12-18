@@ -69,7 +69,14 @@ class EmotionInference:
         negative_emotions = {"sadness", "anger", "disgust", "fear"}
 
         for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing posts"):
-            text = row.get("全文内容", "") # 全文内容 or 微博正文
+            # text = row.get("全文内容", "") # 全文内容 or 微博正文
+            if "微博正文" in row:
+                text = str(row.get("微博正文", ""))
+            else:
+                text = str(row.get("全文内容", ""))
+            if text == "" or pd.isna(text):
+                print(f"Skipping empty text at index {idx}")
+                continue
             post_id = str(row.get("id", idx))
             image_path = os.path.join(image_dir_path, f"{post_id}.jpg")
             if not os.path.exists(image_path):
