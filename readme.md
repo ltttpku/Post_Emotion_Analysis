@@ -10,8 +10,8 @@
 
 ### 数据准备
 **数据源：**
-- 旧数据：[下载链接](link)，下载后，将指定存放路径替换`new_train.py`中的`old_data_dir`变量
-- 新数据：[下载链接](link)，下载后，将指定存放路径替换`new_train.py`中的`new_data_root`变量
+- 旧数据：[下载链接](https://disk.pku.edu.cn/link/AA949EA10AD1FE438781190519A43F0129)，下载后，将指定存放路径替换`new_train.py`中的`old_data_dir`变量
+- 新数据：[下载链接](https://disk.pku.edu.cn/link/AA949EA10AD1FE438781190519A43F0129)，下载后，将指定存放路径替换`new_train.py`中的`new_data_root`变量
 
 **数据列格式：**
 - `processed_text` - 处理后的文本
